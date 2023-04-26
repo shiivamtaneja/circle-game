@@ -2,8 +2,18 @@ body,
 html {
     margin: 0;
     cursor: none;
+    overflow: hidden;
 }
 
 canvas {
     background-color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    font-size: 5rem;
+    top: 0;
+    left: 100px;
 }
