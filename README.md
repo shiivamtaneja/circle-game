@@ -1,4 +1,4 @@
-# Circle Game
+# Circle Catcher - The Circle Game 
 
 In this game, the player controls a white circle with their mouse and attempts to eat other circles of various sizes to increase their own size. The objective of the game is to become the largest circle possible without being eaten by a larger circle.
 
