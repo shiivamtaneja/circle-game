@@ -3,20 +3,38 @@ canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 var c = canvas.getContext("2d");
 
+var canvasHidden = document.querySelector(".canvas-web")
+var menu = document.querySelector(".menu")
+var difficulty = document.querySelector("#difficulty")
+
+var color = ["#ffff01", "#ffc801", "#ff9000", "#ff6400", "#fe0000", "#c8007d", "#c8007d", "#6400a0", "#0011a9", "#005eb5", "#01a0c8", "#0eaf01", "#8bc800"];
+var circleArray = [];
+
+var keypress = document.addEventListener("keydown", handdleStart)
 let counter = 0;
+
+function submitClicked() {
+    canvasHidden.classList.remove("canvas-web")
+    menu.classList.add("canvas-web")
+}
 
 c.font = "50px Arial";
 c.fillStyle = "white";
 c.textAlign = "center";
 c.fillText("Press Any Key to Start", canvas.width / 2, canvas.height / 2);
 
-var keypress = document.addEventListener("keydown", handdleStart)
 
 function handdleStart() {
     counter++;
     if (counter <= 1) {
         animate()
-        generateRandomCircles()
+        if (difficulty.value == 1) {
+            generateRandomCircles(10)
+        } else if (difficulty.value == 2) {
+            generateRandomCircles(50)
+        } else if (difficulty.value == 3) {
+            generateRandomCircles(120)
+        }
     }
 }
 
@@ -55,10 +73,9 @@ function Circle(x, y, dx, dy, r, colorIndex) {
         this.x += this.dx;
     }
 }
-var color = ["#ffff01", "#ffc801", "#ff9000", "#ff6400", "#fe0000", "#c8007d", "#c8007d", "#6400a0", "#0011a9", "#005eb5", "#01a0c8", "#0eaf01", "#8bc800"];
-var circleArray = [];
-function generateRandomCircles() {
-    for (var i = 0; i < 10; i++) {
+
+function generateRandomCircles(difficultyValue) {
+    for (var i = 0; i < difficultyValue; i++) {
         var x = window.innerWidth;
         var y = window.innerHeight;
         var dx = (Math.random() - 0.5) * 5;
@@ -134,7 +151,7 @@ function animate() {
 
 function reset() {
     c.font = "50px Arial";
-    c.fillStyle = "white";
+    c.fillStyle = "red";
     c.textAlign = "center";
     c.fillText("Game Over", canvas.width / 2, (canvas.height / 2) - 100);
     c.fillText("Press Any Key to Reset", canvas.width / 2, canvas.height / 2);

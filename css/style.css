@@ -3,6 +3,7 @@ html {
     margin: 0;
     cursor: none;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 canvas {
@@ -11,9 +12,21 @@ canvas {
 }
 
 .menu {
-    background-color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
     color: white;
     font-size: 5rem;
-    top: 0;
-    left: 100px;
+    top: 20%;
+    left: 25%;
+}
+
+#difficulty,
+.submit-btn {
+    font-size: 20px;
+}
+
+.canvas-web {
+    display: none;
 }
