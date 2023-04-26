@@ -8,14 +8,19 @@ In this game, the player controls a white circle with their mouse and attempts t
 
 ## How to Play
 
-Use your mouse to control the movement of the white circle.
-Move the white circle around the game area to locate smaller circles to eat.
-The white circle will automatically eat any smaller circles that it comes into contact with.
-As the white circle eats smaller circles, its size will increase.
-Avoid larger circles as they will eat the white circle and end the game.
-Controls
+To play the game:
+
+- Use your mouse to control the movement of the white circle.
+- Move the white circle around the game area to locate smaller circles to eat.
+- The white circle will automatically eat any smaller circles that it comes into contact with. As the white circle eats smaller circles, its size will increase.
+- Avoid larger circles as they will eat the white circle and end the game.
+
+## Controls
+
 Use your mouse to move the white circle.
-Game Over
+
+## Game Over
+
 The game is over when the white circle is eaten by a larger circle. The player can then choose to start a new game or exit the game.
 
 ## Installation
