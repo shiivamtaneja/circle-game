@@ -5,7 +5,9 @@ In this game, the player controls a white circle with their mouse and attempts t
 ## Gameplay
 
 ![Difficulty Options](./img/ss%20difficulty.png)
+
 ![Gameplay](./img/screenshot.png)
+
 ![Game Over](./img/ss%20gameover.png)
 
 ## How to Play
