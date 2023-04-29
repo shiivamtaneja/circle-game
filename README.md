@@ -2,6 +2,8 @@
 
 In this game, the player controls a white circle with their mouse and attempts to eat other circles of various sizes to increase their own size. The objective of the game is to become the largest circle possible without being eaten by a larger circle.
 
+> `NOTE:` This game is designed for desktop/laptop users and may not function optimally on mobile or tablet devices.
+
 ## Screenshots
 
 ### Difficulty Modes 
