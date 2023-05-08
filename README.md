@@ -50,8 +50,13 @@ No installation is required to play this game. Simply download the necessary fil
 
 This game was created by Shivam Taneja as a fun project to practice web development skills. The game mechanics and graphics were implemented using pure vanilla JavaScript, manipulating the canvas properties of the HTML DOM to render the game on the web page. No external libraries were used in the development of this project.
 
-- GitHub: [Shivam Taneja](https://github.com/shiivamtaneja)
 - LinkedIn: [Shivam Taneja](https://www.linkedin.com/in/shivam-taneja/)
+
+## Future Ideas
+
+- Add user profiles
+- Keep track of scores
+- Display "Top Scores for Today" on the main menu.
 
 ## License
 Feel free to use and modify the code to create your own version of the game.
